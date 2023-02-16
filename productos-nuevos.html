@@ -27,7 +27,7 @@
                         <input class="search" type="text" placeholder="¿Que deseas buscar?">
                         <img  src="assets\lupa.png" alt="lupa-icon">
                     </div>
-                    <button class="btn__admin">Menú admin</button>
+                    <a href="index-admin.html"><button class="btn__admin">Menú admin</button></a>
                 </div>
                 
             </div>
@@ -51,14 +51,14 @@
                         placeholder="Categoría" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
 
                         <input id="producto__form__nombre" class="producto__form__nombre" type="text" name="nombre_producto"
-                        placeholder="Nombre del producto" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
+                        placeholder="Nombre del producto"  required maxlength="20">
                         
                         <input id="producto__form__precio" class="producto__form__precio" type="number" name="precio" step="0.01"
-                        placeholder="Precio del producto" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
+                        placeholder="Precio del producto">
 
                         <textarea class="producto__form__descripcion" rows="5" cols="40" name="descripcion_producto"
-                            placeholder="Descripción del producto" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="300"></textarea>
-
+                            placeholder="Descripción del producto" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="150">
+                        </textarea>
 
                         <button id="btn__form__agregar" type="submit" class="btn__form__agregar">Agregar producto</button>
 
