@@ -1,9 +1,168 @@
 {
-    "perfil": [
-        {
-            "nombre": "Daniel Ramírez",
-            "email": "daniramirez@hotmail.com.ar",
-            "id": 1
-        }
-    ]
+  "usuarios": [
+    {
+      "email": "daniramirez@hotmail.com.ar",
+      "pass": "clave2023",
+      "id": "d227f159-6b09-430f-bb6f-86e304f3eae5"
+    },
+    {
+      "email": "dada@hotmail.com.ar",
+      "pass": "clave2222",
+      "id": "d227f159-6b09-430f-bb6f-86e304f3eae6"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Shortys Chicana",
+      "precio": "190.000",
+      "categoria": "Maderos",
+      "descripcion": "madero shortys icano blanco negro",
+      "rutaImg": "..\\assets\\shortys-chicana.jfif",
+      "id": "6af0a4cf-eee2-49dd-a953-cfac4bb6aed5"
+    },
+    {
+      "nombre": "Gorra Bulls",
+      "precio": "30.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorra Bulls gris",
+      "id": "ca894d75-bb3e-4bde-8290-12d749795d04",
+      "rutaImg": "..\\assets\\Gorra-Bulls.png"
+    },
+    {
+      "nombre": "Gorra Houston",
+      "precio": "30.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorra Houston gris",
+      "id": "6f246d2c-05a1-4293-9cbf-5c4d9481b612",
+      "rutaImg": "..\\assets\\Gorra-Houston.png"
+    },
+    {
+      "nombre": "Gorra Long",
+      "precio": "30.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorra Long cafe",
+      "id": "5fb06825-606a-4ded-8bac-cf2885c6c835",
+      "rutaImg": "..\\assets\\Gorra-Long.png"
+    },
+    {
+      "nombre": "Gorra NY",
+      "precio": "30.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorra NY azul",
+      "id": "6f22115f-7c16-4bba-938c-17fe0c5e68f8",
+      "rutaImg": "..\\assets\\Gorra-NY.png"
+    },
+    {
+      "nombre": "Gorro Simpsons",
+      "precio": "18.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorro Simpsons naranja",
+      "id": "31d6504f-f31a-494a-a987-08d5a20a5d74",
+      "rutaImg": "..\\assets\\Gorro-Simson.png"
+    },
+    {
+      "nombre": "Gorro Trasher",
+      "precio": "30.000",
+      "categoria": "Gorras",
+      "descripcion": "Gorro Trasher oliva",
+      "id": "8ef87ceb-b65d-4987-9995-10600b8ed410",
+      "rutaImg": "..\\assets\\Gorro-verde.png"
+    },
+    {
+      "nombre": "Listen Mariachi",
+      "precio": "160.000",
+      "categoria": "Maderos",
+      "descripcion": "listen mariachi negra                        ",
+      "rutaImg": "..\\assets\\listen calacaX.jfif",
+      "id": "b30ecbcc-84d7-496c-8867-55b333acfed2"
+    },
+    {
+      "nombre": "Listen Montolla",
+      "precio": "160.000",
+      "categoria": "Maderos",
+      "descripcion": "blanca                        ",
+      "rutaImg": "..\\assets\\listen-montoya-white.jfif",
+      "id": "7d9cecd0-f024-41e7-a498-ed3d81a1ba5d"
+    },
+    {
+      "nombre": "Ache 7.5",
+      "precio": "140.000",
+      "categoria": "Maderos",
+      "descripcion": " Nacional                     ",
+      "rutaImg": "..\\assets\\Tabla-ache.jfif",
+      "id": "047dab05-e289-454b-afc3-865f73bf567b"
+    },
+    {
+      "nombre": "Listen azul",
+      "precio": "160.000",
+      "categoria": "Maderos",
+      "descripcion": "listen azul                        ",
+      "rutaImg": "..\\assets\\Listen-Cpmpleta-azul.jfif",
+      "id": "9d8a440a-9b2e-405b-80b5-cb169afaf88e"
+    },
+    {
+      "nombre": "Shortys",
+      "precio": "190.000",
+      "categoria": "Maderos",
+      "descripcion": " calaca                       ",
+      "rutaImg": "..\\assets\\tabla-shortys.png",
+      "id": "6a5b367e-6ed2-4f5a-bf9b-262015eace4d"
+    },
+    {
+      "nombre": "Caucos Central X2",
+      "precio": "6.000",
+      "categoria": "Hardware",
+      "descripcion": "Color rojo                        ",
+      "rutaImg": "..\\assets\\cauchos.jpg",
+      "id": "a1e8c2b5-f8f0-4cb1-a58f-7084de08da24"
+    },
+    {
+      "nombre": "Elevadores",
+      "precio": "9.000",
+      "categoria": "Hardware",
+      "descripcion": "           Color negro             ",
+      "rutaImg": "..\\assets\\elevadores.jpg",
+      "id": "ca7dd32c-cde5-4deb-90aa-8d0efa7013c5"
+    },
+    {
+      "nombre": "Herramienta T",
+      "precio": "30.000",
+      "categoria": "Hardware",
+      "descripcion": "   Plastica/Metálica                     ",
+      "rutaImg": "..\\assets\\herramientaT.jpg",
+      "id": "2c6d5a67-5abf-465d-a649-9affea84f33a"
+    },
+    {
+      "nombre": "Pivot Cups",
+      "precio": "3000",
+      "categoria": "Hardware",
+      "descripcion": "por unidad                 ",
+      "rutaImg": "..\\assets\\pivot cups.jpg",
+      "id": "d35afda8-5f98-4712-8a74-247e5d1b93b9"
+    },
+    {
+      "nombre": "Rodamientos ABEC9",
+      "precio": "30.000",
+      "categoria": "Hardware",
+      "descripcion": " rodamientos                        ",
+      "rutaImg": "..\\assets\\rodamientos-morbid9.png",
+      "id": "874e2c92-1860-4c77-ae96-1f306853d4b3"
+    },
+    {
+      "nombre": "Shortys Color",
+      "precio": "12.000",
+      "categoria": "Hardware",
+      "descripcion": "  varios colores                      ",
+      "rutaImg": "..\\assets\\shorrtys2.png",
+      "id": "baedbf7d-f44d-4ed3-a5b5-3905a2b52f2e"
+    },
+    {
+      "nombre": "Shortys negros",
+      "precio": "9.000",
+      "categoria": "Hardware",
+      "descripcion": "   color negro                     ",
+      "rutaImg": "..\\assets\\shortys negros.jpg",
+      "id": "85c1e453-50a4-401a-bedd-d1dddb75f840"
+    }
+  ]
 }

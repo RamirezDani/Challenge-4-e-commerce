@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style-productos-editar.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <title>E-Commerce - SoulOne SkateShop - Inicio Sesion</title>
+</head>
+
+<body>
+
+    <header class="menu__header">
+
+
+        <div class="container">
+            <div class="encabezado">
+                <div class="logoname">
+                    <img class="logo__man" src="..\assets\soulOnePeace-Man.gif" alt="Man SoulOne-SkateShop">
+                    <img class="logo__letras" src="..\assets\soulOne---letters.gif" alt="Letra SoulOne-SkateShop">
+                </div>
+
+                <div class="search__group_wrap">
+                    <div class="search__group">
+                        <input class="search" type="text" placeholder="¿Que deseas buscar?">
+                        <img src="..\assets\lupa.png" alt="lupa-icon">
+                    </div>
+                    <a href="index-admin.html"><button class="btn__admin">Menú admin</button></a>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="info__agregar__producto">
+            <div class="container">
+
+                <h2 class="formproducto__title">Editar Producto</h2>
+                <form id=formulario__inicio class="form__producto" name="form" form-prodedit>
+
+                    <div class="producto__form__groupLabels">
+
+                        <div class="producto__form__LabelArrastre">
+                            <img class="icon__img" src="..\assets\icon-img.png" alt="icono imagenes">
+                            <label class="producto__form__label2" for="imagen">Arrastre para agregar una imagen</label>
+                            <input class="producto__form__img2" type="file" id="imagen" name="imagen"
+                                style="display: none;">
+                        </div>
+                        <p>O</p>
+                        <label class="producto__form__label" for="imagen">Selecciona una imagen</label>
+                        <input class="producto__form__img" type="file" id="imagen" name="imagen" data-imagen>                        
+                    </div>
+
+                    <input id="producto__form__categoria" class="producto__form__categoria" type="text" name="categoria"
+                        placeholder="Categoría" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50"
+                        data-categoriaProducto>
+
+                    <input id="producto__form__nombre" class="producto__form__nombre" type="text" name="nombre_producto"
+                        placeholder="Nombre del producto" required maxlength="20" data-nombreProducto>
+
+                    <input id="producto__form__precio" class="producto__form__precio" type="number" name="precio"
+                        step="0.01" placeholder="Precio del producto" data-precioProducto>
+
+                    <textarea id="producto__form__descripcion" class="producto__form__descripcion" rows="5" cols="40" name="descripcion_producto"
+                        placeholder="Descripción del producto" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="150"
+                        data-descripcionProducto>
+                    </textarea>
+
+                    <button id="btn__form__editarProducto" type="submit" class="btn__form__editarProducto">Editar producto</button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section class="info__bottom">
+            <div class="container">
+
+                <img class="img__footer_logo" src="..\assets\soulOne-Pro.gif" alt="Logo SoulOne-SkateShop">
+
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Hable con nosotros</h2>
+                    <form id=formulario__form class="formcontato__form" name="form">
+                        <input id="nombre__form" class="formcontato__input" type="text" name="nombre"
+                            placeholder="Nombre" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
+                        <textarea id="mensage__form" class="formcontato__textarea" rows="5" cols="40" name="mensaje"
+                            placeholder="Mensaje" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="300"></textarea>
+                        <button id="btn__form" type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="rodapePrincipal">
+        <div class="container">
+
+            <section class="footer__menu">
+                <div class="container">
+
+                    <ul class="menu__linea__lista">
+                        <a href="https://github.com/RamirezDani" target="_blank">
+                            <li class="menu__linea__quienes">Quienes Somos</li>
+                        </a>
+                        <a href="https://github.com/RamirezDani" target="_blank">
+                            <li class="menu__linea__politicas">Política de Privacidad</li>
+                        </a>
+                        <a href="https://github.com/RamirezDani" target="_blank">
+                            <li class="menu__linea__fidelidad">Programa de Fidelidad</li>
+                        </a>
+                        <a href="https://github.com/RamirezDani" target="_blank">
+                            <li class="menu__linea3__tiendas">Nuestras Tiendas</li>
+                        </a>
+                        <a href="https://github.com/RamirezDani" target="_blank">
+                            <li class="menu__linea3__anuncie">Anuncie aquí</li>
+                        </a>
+
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="footer__rodape">
+                <p>Desarrollado por Daniel Fernando Ramírez - 2022</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        var form = document.querySelector('.producto__form__LabelArrastre');
+
+        form.addEventListener('dragover', function (event) {
+            event.preventDefault();
+            this.style.backgroundColor = 'lightgray';
+        });
+        form.addEventListener('drop', function (event) {
+            event.preventDefault();
+            this.style.backgroundColor = '';
+            var imageFile = event.dataTransfer.files[0];
+            var input = document.querySelector('input[name="imageFile"]');
+            console.log("imageFile: " + imageFile);
+            console.log("input: " + input);
+            console.log("input.files: " + input.files);
+            input.files = [imageFile];
+
+            console.log("input.file: " + input.file);
+        });
+    </script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "uuid": "https://cdn.skypack.dev/uuid"
+      }
+    }
+  </script>
+
+  <script type="module" src="../controllers/productosEdit2.controller.js"></script>
+  <!-- <script type="module" src="../controllers/productosEdit3.controller.js"></script> -->
+
+</body>
+
+</html>

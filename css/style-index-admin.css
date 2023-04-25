@@ -26,7 +26,7 @@
     gap: 1rem;
     height:5.1rem;        
     padding-top: 0.5rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 0.2rem;    
 }
 
 .menu-linea1{
@@ -114,15 +114,20 @@
     display: flex;    
     flex-wrap: wrap;     
     gap: 1rem;
+    justify-content:flex-start;
 }
 
 .menu__linea1__box{
-    width: 14%;
+    width: 15.5%;
 }
 
 .imagen__menu__linea1{
     height: 12rem;
     width: 100%;
+}
+.menu__linea1__imgTxt {
+    border: 2px solid #dcdcdc;
+    border-radius: 0.5rem;
 }
 
 .menu__linea1__imgTxt li{
@@ -146,6 +151,45 @@
     font-weight: bold;
 }
 
+.menu__linea1__id{
+    display: none;
+}
+
+.groupProductEdit{
+    display: flex;
+    justify-content: space-between;     
+}
+
+.btn__editar1{
+    background-color: var(--color--btn1);
+    border: 2px solid #dcdcdc;
+    border-radius:0.4rem;
+    font-weight:bold;
+    color: white;
+    width: 3rem;
+    height: 2rem;
+}
+
+.btn__editar1:hover{
+    border-color: var(--color--btn1);
+    background-color: grey;    
+}
+
+.btn__eliminar1{
+    background-color: red;
+    border: 2px solid #dcdcdc;
+    border-radius:0.4rem;
+    font-weight:bold;
+    color: white;
+    width: 3rem;
+    height: 2rem;
+}
+
+.btn__eliminar1:hover{
+    border-color: red;
+    background-color: grey;
+    color:white;
+}
 
 .info__bottom{
     background-color: rgb(127, 227, 255);
@@ -154,7 +198,7 @@
 .info__bottom .container{
     display: flex;
     justify-content: space-around;
-    height: 16rem;    
+    height: 18rem;    
     align-items: center;
 }
 
@@ -201,7 +245,7 @@
 }
 
 .formcontato__botao:hover{
-    border: 1px solid #dcdcdc;;
+    border: 1px solid #dcdcdc;
     border-color: black;
     background-color: grey;
     color: black;
@@ -243,6 +287,55 @@ hr {
     color: grey;
     border-style:solid;
 
+}
+
+@media (max-width:1470px) {
+    .menu__linea1__box{
+        width: 15.4%;
+    }
+}
+
+
+@media (max-width:1336px) {
+    .menu__linea1__box{
+        width: 15.3%;
+    }
+}
+
+@media (max-width:1236px) {
+    .menu__linea1__box{
+        width: 15.2%;
+    }
+}
+
+@media (max-width:1154px) {
+    .menu__linea1__box{
+        width: 15.1%;
+    }
+}
+
+@media (max-width:1080px) {
+    .menu__linea1__box{
+        width: 15%;
+    }
+}
+
+@media (max-width:1016px) {
+    .menu__linea1__box{
+        width: 14.9%;
+    }
+}
+
+@media (max-width:960px) {
+    .menu__linea1__box{
+        width: 14.8%;
+    }
+}
+
+@media (max-width:910px) {
+    .menu__linea1__box{
+        width: 14.7%;
+    }
 }
 
 /*Tablet*/
@@ -404,8 +497,7 @@ hr {
     }
 
     .tira__imagenes1{
-        flex-wrap: wrap;
-        justify-content: space-between;     
+        flex-wrap: wrap;         
         align-content: center;
         gap: 1rem;           
     }

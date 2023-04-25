@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <title>E-Commerce - SoulOne SkateShop</title>
+</head>
+
+<body>
+
+    <header class="menu__header">
+        <div class="container">
+            <div class="encabezado">
+                <div class="logoname">
+                    <img class="logo__man" src="..\assets\soulOnePeace-Man.gif" alt="Man SoulOne-SkateShop">
+                    <img class="logo__letras" src="..\assets\soulOne---letters.gif" alt="Letra SoulOne-SkateShop">
+                </div>
+
+                <div class="search__group_wrap">
+                    <div class="search__group">
+                        <input class="search" type="text" placeholder="¿Que deseas buscar?">
+                        <img  src="..\assets\lupa.png" alt="lupa-icon">
+                    </div>
+                    <a href="inicio-sesion.html"><button class="btn__login">Login</button></a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="portada">
+            <div class="container">
+                <h1 class="titulo__portada">Febrero Promocional</h1>
+                <p class="parrafo__portada">Productos seleccionados con el 33% de descuento</p>
+                <button onclick="location.href='#ropaSeccId'" class="btn__portada" >Ver Productos</button>
+            </div>
+        </section>
+
+        <section class="menu-linea1">
+            <div class="container">
+
+                <div class="titulo__menu__linea1">
+                    <h2>Patinetas</h2>
+                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →<img src=""> </a>
+                </div>
+
+                <div class="tira__imagenes1" tira-img1></div>
+            </div>
+        </section>
+
+        <section class="menu-linea2">
+            <div class="container">
+
+                <div class="titulo__menu__linea2">
+                    <h2 id="ropaSeccId">Gorras</h2>
+                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →</a>
+                </div>
+
+                <div class="tira__imagenes2" tira-img2></div>
+            </div>
+        </section>
+
+        <section class="menu-linea3">
+            <div class="container">
+
+                <div class="titulo__menu__linea3">
+                    <h2>Hardware</h2>
+                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →</a>
+                </div>
+
+                <div class="tira__imagenes3" tira-img3></div>
+            </div>
+        </section>
+
+        <section class="info__bottom">
+            <div class="container">
+                
+                <img class="img__footer_logo" src="..\assets\soulOne-Pro.gif" alt="Logo SoulOne-SkateShop">                                 
+            
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Hable con nosotros</h2>
+                    <form id=formulario__form class="formcontato__form" name="form">
+                        <input id="nombre__form" class="formcontato__input" type="text" name="nombre"
+                            placeholder="Nombre" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="40">
+                        <textarea id="mensage__form" class="formcontato__textarea" rows="5" cols="40" name="mensaje"
+                            placeholder="Mensaje" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="120"></textarea>
+                        <button id="btn__form" type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodapePrincipal">
+        <div class="container">
+            
+            <section class="footer__menu">
+              <div class="container">
+                    
+                        <ul class="menu__linea__lista">
+                            <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea__quienes">Quienes Somos</li></a>
+                            <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea__politicas">Política de Privacidad</li></a>
+                            <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea__fidelidad">Programa de Fidelidad</li></a>
+                            <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea3__tiendas">Nuestras Tiendas</li></a>
+                            <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea3__anuncie">Anuncie aquí</li></a>                     
+                                                                
+                        </ul>
+                    
+                </div>
+            </section>
+            <hr>
+            <section class="footer__rodape">
+                <p>Desarrollado por Daniel Fernando Ramírez - 2022</p>                
+            </section>
+        </div>
+    </footer>
+    <script type="importmap">
+        {
+          "imports": {
+            "uuid": "https://cdn.skypack.dev/uuid"
+          }
+        }
+    </script>  
+    <script type="module" src="../controllers/productosListarPorCategoria.controller.js"></script>
+</body>
+
+</html>
+
+

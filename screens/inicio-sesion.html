@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style-productos.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/style-inicio.css">
+    <link rel="stylesheet" href="../css/reset.css">
 
     <title>E-Commerce - SoulOne SkateShop - Inicio Sesion</title>
 </head>
@@ -18,16 +18,12 @@
         <div class="container">
             <div class="encabezado">
                 <div class="logoname">
-                    <img class="logo__man" src="assets\soulOnePeace-Man.gif" alt="Man SoulOne-SkateShop">
-                    <img class="logo__letras" src="assets\soulOne---letters.gif" alt="Letra SoulOne-SkateShop">
+                    <img class="logo__man" src="..\assets\soulOnePeace-Man.gif" alt="Man SoulOne-SkateShop">
+                    <img class="logo__letras" src="..\assets\soulOne---letters.gif" alt="Letra SoulOne-SkateShop">
                 </div>
-            
-                <div class="search__group_wrap">
-                    <div class="search__group">
-                        <input class="search" type="text" placeholder="¿Que deseas buscar?">
-                        <img  src="assets\lupa.png" alt="lupa-icon">
-                    </div>
-                    <a href="index-admin.html"><button class="btn__admin">Menú admin</button></a>
+                <div class="search__group">
+                    <input class="search" type="text" placeholder="¿Que deseas buscar?">
+                    <img  src="..\assets\lupa.png" alt="lupa-icon">
                 </div>
                 
             </div>
@@ -37,31 +33,21 @@
 
     <main class="main-container">
        
-        <section class="info__agregar__producto">
+        <section class="info__inicio__session">
             <div class="container">            
 
-                    <h2 class="formproducto__title">Agregar nuevo producto</h2>
+                    <h2 class="forminicio__title">Iniciar Sesión</h2>
 
-                    <form id=formulario__inicio class="form__producto" name="form">
+                    <form id=formulario__inicio class="form__inicio" name="form" data-form>
 
-                        <input id="producto__form__url" class="producto__form__url" type="text" name="url"
-                        placeholder="URL de la imagen">
+                        <input id="email__form__inicio" class="email__form__inicio" type="email" name="correo"
+                        placeholder="Escriba su correo electrónico" required data-email>
 
-                        <input id="producto__form__categoria" class="producto__form__categoria" type="text" name="categoria"
-                        placeholder="Categoría" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
+                        <input id="pass__form__inicio" class="pass__form__inicio" type="text" name="pass"
+                        placeholder="Escriba su contraseña" required data-pass>
 
-                        <input id="producto__form__nombre" class="producto__form__nombre" type="text" name="nombre_producto"
-                        placeholder="Nombre del producto"  required maxlength="20">
-                        
-                        <input id="producto__form__precio" class="producto__form__precio" type="number" name="precio" step="0.01"
-                        placeholder="Precio del producto">
-
-                        <textarea class="producto__form__descripcion" rows="5" cols="40" name="descripcion_producto"
-                            placeholder="Descripción del producto" pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="150">
-                        </textarea>
-
-                        <button id="btn__form__agregar" type="submit" class="btn__form__agregar">Agregar producto</button>
-
+                        <!-- <a href="index-admin.html"><button class="btn__form__inicio">Entrar</button></a> -->
+                        <button class="btn__form__inicio">Entrar</button>
                     </form>                
             </div>
         </section>
@@ -69,7 +55,7 @@
         <section class="info__bottom">
             <div class="container">
                 
-                <img class="img__footer_logo" src="assets\soulOne-Pro.gif" alt="Logo SoulOne-SkateShop">                                 
+                <img class="img__footer_logo" src="..\assets\soulOne-Pro.gif" alt="Logo SoulOne-SkateShop">                                 
             
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Hable con nosotros</h2>
@@ -110,6 +96,16 @@
             </section>
         </div>
     </footer>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "uuid": "https://cdn.skypack.dev/uuid"
+          }
+        }
+      </script>
+      
+    <script type="module" src="../controllers/registro.controller.js"></script>
 
 </body>
 
