@@ -1,1 +1,4 @@
 node_modules
+
+#el servidor local con el json se eecuta con -> json-server --watch db.json
+#las paginas se lanzan con live server

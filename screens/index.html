@@ -24,7 +24,7 @@
 
                 <div class="search__group_wrap">
                     <div class="search__group">
-                        <input class="search" type="text" placeholder="¿Que deseas buscar?">
+                        <input class="search" type="text" placeholder="¿Que deseas buscar?" in-search>
                         <img  src="..\assets\lupa.png" alt="lupa-icon">
                     </div>
                     <a href="inicio-sesion.html"><button class="btn__login">Login</button></a>
@@ -48,8 +48,8 @@
             <div class="container">
 
                 <div class="titulo__menu__linea1">
-                    <h2>Patinetas</h2>
-                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →<img src=""> </a>
+                    <h2>Maderos</h2>
+                    <a target="_blank" showGroup-patinetas>Ver todo →</a>
                 </div>
 
                 <div class="tira__imagenes1" tira-img1></div>
@@ -61,7 +61,7 @@
 
                 <div class="titulo__menu__linea2">
                     <h2 id="ropaSeccId">Gorras</h2>
-                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →</a>
+                    <a target="_blank" showGroup-gorras>Ver todo →</a>
                 </div>
 
                 <div class="tira__imagenes2" tira-img2></div>
@@ -73,7 +73,7 @@
 
                 <div class="titulo__menu__linea3">
                     <h2>Hardware</h2>
-                    <a href="https://github.com/RamirezDani" target="_blank">Ver todo →</a>
+                    <a target="_blank" showGroup-hardware>Ver todo →</a>
                 </div>
 
                 <div class="tira__imagenes3" tira-img3></div>
@@ -132,6 +132,10 @@
         }
     </script>  
     <script type="module" src="../controllers/productosListarPorCategoria.controller.js"></script>
+    <script type="module" src="../controllers/productosSearch.controller.js"></script>
+    <script type="module" src="../controllers/productosDetail.controller.js"></script>
+    <script type="module" src="../controllers/productosShowGroupCategory.controller.js"></script>
+
 </body>
 
 </html>

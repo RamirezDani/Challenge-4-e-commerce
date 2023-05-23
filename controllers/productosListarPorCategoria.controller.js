@@ -11,7 +11,7 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
   <li class="menu__linea1__nombre" id="titulo${index}">${nombre}</li>
   <li class="menu__linea1__precio">${precio}</li>
   <li class="menu__linea1__id" id="id${index}">${id}</li>
-  <a href="https://github.com/RamirezDani" target="_blank"><li class="menu__linea1__link">Ver Producto</li></a>
+  <a href="https://github.com/RamirezDani" target="_blank" class="menu_link_a"><li class="menu__linea__link${index}" id="link_detail${index}">Ver Producto</li></a>
  
 </ul>
       `;
