@@ -7,6 +7,4 @@ click derecho sobre el archivo y seleccionando live server
 
 Reto número cuatro del programa ONE de Oracle. E-commerce orientado a productos deportivos de skateboard.  Página Web responsive
 
-PENDIENTE
-1.Opcion ver producto    
-eliminar el contenido de menu__grupo__detalle e insertarlo desde el js productoDetail2.controller.js
+
