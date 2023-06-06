@@ -10,7 +10,7 @@ window.addEventListener("load", (evento) => {
         let btn_position = "link_detail"+i;
         let id_position = "#id"+i+".menu__linea1__id";
         const link_detail = document.getElementById(btn_position);        
-
+               
         link_detail.addEventListener("click", (evento) => {    
             evento.preventDefault();                       
             const id_product = document.querySelector(id_position);                  
@@ -18,6 +18,8 @@ window.addEventListener("load", (evento) => {
             window.location.href="../screens/productos-detalle.html";
         }
         ); 
+        
+        
     }
 }
 );
