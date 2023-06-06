@@ -1,0 +1,87 @@
+.menu-linea1{
+    padding-top: 3rem;
+}
+
+.menu__detalle__producto{
+    display: flex;     
+    gap:1rem;    
+}
+
+.marco__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: 70%;
+    height: 36rem;
+    background-color:white;
+    padding: 2rem 0rem 2rem;
+}
+
+.imagen__producto{
+    max-width: 100%;
+    max-height: 100%;    
+    /* object-fit: cover;     */
+}
+
+.menu__grupo__detalle{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding-top: 1%;
+    border: solid;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-color: rgb(194, 194, 194);
+    padding: 1rem;
+    width:30%;
+    font-family: 'Trebuchet MS', sans-serif,'Gill Sans', 'Gill Sans MT';
+}
+
+.info__producto li{
+    margin-bottom: 1rem;
+}
+
+.info__producto .nombre__producto{
+    font-weight: bold;    
+    font-size: 2rem;
+}
+
+.info__producto .precio__producto{
+      
+    font-size: 1.8rem;
+}
+
+
+.info__producto .descripcion__producto__encabezado,  .info__producto .descripcion__producto__encabezado{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.formulario__desplegable{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu__desplegable .talla__titulo, .menu__desplegable .cantidad__titulo{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.boton__agregarCarrito{
+    margin-top: 2rem;
+    min-width: calc(10vw - 10px);;
+    height: 2.4rem;    
+    background-color:var(--color--btn1);
+    border-radius: 0.6rem;    
+    font-weight:bold;
+    border-color: rgb(151, 151, 151);;
+}
+
+.boton__agregarCarrito:hover{
+    border-color: var(--color--btn1);    
+    background-color:grey;
+    color:white;
+}

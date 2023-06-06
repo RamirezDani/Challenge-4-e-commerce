@@ -163,6 +163,14 @@
       "descripcion": "   color negro                     ",
       "rutaImg": "..\\assets\\shortys negros.jpg",
       "id": "85c1e453-50a4-401a-bedd-d1dddb75f840"
+    },
+    {
+      "nombre": "Lija Negra",
+      "precio": "30000",
+      "categoria": "Hardware",
+      "descripcion": " negra                       ",
+      "rutaImg": "..\\assets\\lija-negra.jpg",
+      "id": "a9026ba7-a9e4-4e35-8b22-85afa416d915"
     }
   ]
 }

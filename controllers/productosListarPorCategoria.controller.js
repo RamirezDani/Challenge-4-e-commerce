@@ -1,6 +1,6 @@
 import {jsonServerManager} from "../service/jsonServer-Manager.js";
 
-const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
+const crearNuevaLinea = (nombre, precio, id, rutaImg, index, index2) => {
   const linea = document.createElement("div");
   linea.classList.add('menu__linea1__box');
   const contenido = `
@@ -10,8 +10,8 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
   </li>
   <li class="menu__linea1__nombre" id="titulo${index}">${nombre}</li>
   <li class="menu__linea1__precio">${precio}</li>
-  <li class="menu__linea1__id" id="id${index}">${id}</li>
-  <a href="https://github.com/RamirezDani" target="_blank" class="menu_link_a"><li class="menu__linea__link${index}" id="link_detail${index}">Ver Producto</li></a>
+  <li class="menu__linea1__id" id="id${index2}">${id}</li>
+  <a class="menu_link_a"><li class="menu__linea__link${index}" id="link_detail${index2}">Ver Producto</li></a>
  
 </ul>
       `;
@@ -22,6 +22,8 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
 
 const bannerProductos = document.querySelector("[tira-img1]");
 export var cont = 0;
+//factor es el numero de fotos que se venpor categori
+const factor = 6;
 
 jsonServerManager
 .listaProductos()
@@ -33,7 +35,7 @@ jsonServerManager
     
     productosPennys.forEach(({ nombre, precio, id, rutaImg }, index) => {
       cont++;
-      const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index);
+      const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,0));
       bannerProductos.appendChild(nuevaLinea);      
       //console.log(nuevaLinea);
     });
@@ -42,6 +44,12 @@ jsonServerManager
 
 const bannerRopa = document.querySelector("[tira-img2]");
 export var cont2 = 0;
+
+var newPosition = (factor,indice,grupo)=>{
+  const result = ((factor*grupo)+indice);
+  return result;
+};
+
 
 jsonServerManager
 .listaProductos()
@@ -53,7 +61,7 @@ jsonServerManager
     
     productosRopa.forEach(({ nombre, precio, id, rutaImg }, index) => {
       cont2++;
-      const nuevaLinea2 = crearNuevaLinea(nombre, precio, id, rutaImg, index);
+      const nuevaLinea2 = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,1));
       bannerRopa.appendChild(nuevaLinea2);      
       //console.log(nuevaLinea);
     });
@@ -73,7 +81,7 @@ jsonServerManager
     
     productosHardware.forEach(({ nombre, precio, id, rutaImg }, index) => {
       cont3++;
-      const nuevaLinea3 = crearNuevaLinea(nombre, precio, id, rutaImg, index);
+      const nuevaLinea3 = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,2));
       bannerHardware.appendChild(nuevaLinea3);      
       //console.log(nuevaLinea);
     });
