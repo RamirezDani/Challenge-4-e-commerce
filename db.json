@@ -14,9 +14,9 @@
   "productos": [
     {
       "nombre": "Shortys Chicana",
-      "precio": "190.000",
+      "precio": "250.000",
       "categoria": "Maderos",
-      "descripcion": "madero shortys icano blanco negro",
+      "descripcion": "madero shortys icano blanco ",
       "rutaImg": "..\\assets\\shortys-chicana.jfif",
       "id": "6af0a4cf-eee2-49dd-a953-cfac4bb6aed5"
     },
@@ -54,11 +54,11 @@
     },
     {
       "nombre": "Gorro Simpsons",
-      "precio": "18.000",
+      "precio": "20.000",
       "categoria": "Gorras",
       "descripcion": "Gorro Simpsons naranja",
-      "id": "31d6504f-f31a-494a-a987-08d5a20a5d74",
-      "rutaImg": "..\\assets\\Gorro-Simson.png"
+      "rutaImg": "..\\assets\\Gorro-Simson.png",
+      "id": "31d6504f-f31a-494a-a987-08d5a20a5d74"
     },
     {
       "nombre": "Gorro Trasher",
@@ -109,10 +109,10 @@
       "id": "6a5b367e-6ed2-4f5a-bf9b-262015eace4d"
     },
     {
-      "nombre": "Caucos Central X2",
+      "nombre": "Cauchos Central X2",
       "precio": "6.000",
       "categoria": "Hardware",
-      "descripcion": "Color rojo                        ",
+      "descripcion": "Color anaranjado",
       "rutaImg": "..\\assets\\cauchos.jpg",
       "id": "a1e8c2b5-f8f0-4cb1-a58f-7084de08da24"
     },
@@ -163,14 +163,6 @@
       "descripcion": "   color negro                     ",
       "rutaImg": "..\\assets\\shortys negros.jpg",
       "id": "85c1e453-50a4-401a-bedd-d1dddb75f840"
-    },
-    {
-      "nombre": "Lija Negra",
-      "precio": "30000",
-      "categoria": "Hardware",
-      "descripcion": " negra                       ",
-      "rutaImg": "..\\assets\\lija-negra.jpg",
-      "id": "a9026ba7-a9e4-4e35-8b22-85afa416d915"
     }
   ]
 }

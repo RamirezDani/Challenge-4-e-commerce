@@ -142,6 +142,11 @@
     background-color: var(--color--btn1);
     color:white;
 }
+
+.producto__form__img{
+   /*  display: none; */
+}
+
 .producto__form__LabelArrastre{
     display:flex;
     flex-direction: column;

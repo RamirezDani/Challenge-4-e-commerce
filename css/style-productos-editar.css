@@ -155,6 +155,11 @@
     padding: 1rem;
 }
 
+.producto__form__img{
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
 .icon__img{
     width: 2rem;    
 }
