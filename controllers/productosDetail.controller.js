@@ -15,7 +15,8 @@ window.addEventListener("load", (evento) => {
             evento.preventDefault();                       
             const id_product = document.querySelector(id_position);                  
             localStorage.setItem("id_product",id_product.innerHTML);            
-            window.location.href="Challenge-4-e-commerce/screens/productos-detalle.html";
+            console.log("PASO");
+            window.location.href="screens/inicio-sesion.html";
         }
         ); 
         
