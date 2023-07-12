@@ -45,20 +45,12 @@
       "rutaImg": "assets\\Gorra-long.png"
     },
     {
-      "nombre": "Gorra NY2",
+      "nombre": "Gorra NY",
       "precio": "30.000",
       "categoria": "Gorras",
       "descripcion": "Gorra NY azul",
       "rutaImg": "assets\\Gorra-NY.png",
       "id": "6f22115f-7c16-4bba-938c-17fe0c5e68f8"
-    },
-    {
-      "nombre": "Gorro Simpsons",
-      "precio": "20.000",
-      "categoria": "Gorras",
-      "descripcion": "Gorro Simpsons naranja",
-      "rutaImg": "assets\\Gorro-Simson.png",
-      "id": "31d6504f-f31a-494a-a987-08d5a20a5d74"
     },
     {
       "nombre": "Gorro Trasher",
