@@ -5,7 +5,7 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
   const contenido = `
   <ul class="menu__linea1__imgTxt">
   <li class="menu__linea1__img">
-      <img class="imagen__menu__linea1"src="${rutaImg}">
+      <img class="imagen__menu__linea1"src="..\\${rutaImg}">
   </li>
   <li class="menu__linea1__nombre" id="titulo${index}">${nombre}</li>
   <li class="menu__linea1__precio">${precio}</li>
