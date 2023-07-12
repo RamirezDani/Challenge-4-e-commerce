@@ -19,7 +19,7 @@ function MakeGroupCategory(tagSelector,categoria){
           localStorage.setItem("productosPorCategoria", JSON.stringify(productosEncontradosCategoria) );
         });        
         
-        window.location.href="../screens/productos-detalle-categoria.html";
+        window.location.href="screens/productos-detalle-categoria.html";
 
       })
       .catch((error) => alert("Ocurrió un error:" + error));
