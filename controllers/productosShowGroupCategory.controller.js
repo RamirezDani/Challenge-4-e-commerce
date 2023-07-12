@@ -14,7 +14,7 @@ function MakeGroupCategory(tagSelector,categoria){
           return producto.categoria.toLowerCase().includes(categoria.toLowerCase());
         })                      
 
-        console.log("ENTRO: " + productosEncontradosCategoria);
+        //console.log("ENTRO: " + productosEncontradosCategoria);
         productosEncontradosCategoria.forEach(() => {               
           localStorage.setItem("productosPorCategoria", JSON.stringify(productosEncontradosCategoria) );
         });        
