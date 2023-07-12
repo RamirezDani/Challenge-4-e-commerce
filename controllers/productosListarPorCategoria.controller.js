@@ -1,3 +1,4 @@
+//Lista version general/comprador
 import {jsonServerManager} from "../service/jsonServer-Manager.js";
 
 const crearNuevaLinea = (nombre, precio, id, rutaImg, index, index2) => {

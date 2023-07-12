@@ -1,3 +1,4 @@
+//Lista vista de edicion
 import {jsonServerManager} from "../service/jsonServer-Manager.js";
 
 const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {

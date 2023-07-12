@@ -17,7 +17,7 @@
       "precio": "250.000",
       "categoria": "Maderos",
       "descripcion": "madero shortys icano blanco ",
-      "rutaImg": "assets\\Gorra-NY.png",
+      "rutaImg": "assets\\shortys-chicana.jfif",
       "id": "6af0a4cf-eee2-49dd-a953-cfac4bb6aed5"
     },
     {
@@ -26,7 +26,7 @@
       "categoria": "Gorras",
       "descripcion": "Gorra Bulls gris",
       "id": "ca894d75-bb3e-4bde-8290-12d749795d04",
-      "rutaImg": "assets\\Gorra-Bulls.png"
+      "rutaImg": "assets\\Gorra-bulls.png"
     },
     {
       "nombre": "Gorra Houston",
@@ -34,7 +34,7 @@
       "categoria": "Gorras",
       "descripcion": "Gorra Houston gris",
       "id": "6f246d2c-05a1-4293-9cbf-5c4d9481b612",
-      "rutaImg": "assets\\Gorra-Houston.png"
+      "rutaImg": "assets\\Gorra-houston.png"
     },
     {
       "nombre": "Gorra Long",
@@ -42,7 +42,7 @@
       "categoria": "Gorras",
       "descripcion": "Gorra Long cafe",
       "id": "5fb06825-606a-4ded-8bac-cf2885c6c835",
-      "rutaImg": "assets\\Gorra-Long.png"
+      "rutaImg": "assets\\Gorra-long.png"
     },
     {
       "nombre": "Gorra NY",
