@@ -16,8 +16,7 @@ window.addEventListener("load", (evento) => {
             evento.preventDefault();                       
             const id_product = document.querySelector(id_position);                  
             localStorage.setItem("id_product",id_product.innerHTML);                        
-            window.location.href="screens/productos-detalle.html";
-            
+            window.location.href="screens/productos-detalle.html";            
         }
         ); 
         

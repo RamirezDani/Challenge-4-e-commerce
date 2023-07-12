@@ -50,7 +50,7 @@ const CargaImagen = (rutaImg) => {
     //console.log(rutaImg);
     const linea = document.createElement("img");
     linea.classList.add('imagen__producto');
-    linea.src = rutaImg    
+    linea.src = "..\\" + rutaImg ;
     return linea;
 }
 //para imprimir dinamicamente desde JS se debe usar querySelector con el atributo externo de la etiqueta
