@@ -12,11 +12,12 @@ window.addEventListener("load", (evento) => {
         const link_detail = document.getElementById(btn_position);        
                
         link_detail.addEventListener("click", (evento) => {    
+            console.log("PASO");
             evento.preventDefault();                       
             const id_product = document.querySelector(id_position);                  
-            localStorage.setItem("id_product",id_product.innerHTML);            
-            console.log("PASO");
-            window.location.href="screens/inicio-sesion.html";
+            localStorage.setItem("id_product",id_product.innerHTML);                        
+            window.location.href="screens/productos-detalle.html";
+            
         }
         ); 
         
