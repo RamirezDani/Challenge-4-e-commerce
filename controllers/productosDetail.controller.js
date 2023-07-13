@@ -12,10 +12,10 @@ function VerProductoHiperlink(inicial,final) {
             let id_position = "#id" + i + ".menu__linea1__id";
             const link_detail = document.getElementById(btn_position);
 
-            if (link_detail == null) {
+          /*   if (link_detail == null) {
                 location.reload();
-            }else{
-
+            }else{ */
+                link_detail &&
                 link_detail.addEventListener("click", (evento) => {
                     //console.log("PASO");                    
                     const id_product = document.querySelector(id_position);
@@ -23,7 +23,7 @@ function VerProductoHiperlink(inicial,final) {
                     window.location.href = "screens/productos-detalle.html";
                 }
                 );
-            }
+            /* } */
             
         }
     }

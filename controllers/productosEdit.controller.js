@@ -2,13 +2,12 @@ import {cont} from "../controllers/productosListar.controller.js"
 //Es el listener de los botones de editar y abre la pagina de editar producto
 
 window.addEventListener("load", (evento) => {
-
     
     //console.log("cont: " + cont)
 
-    if (cont == 0) {
+   /*  if (cont == 0) {
         location.reload();
-    }else{
+    }else{ */
 
         for(var i=0;i<cont;i++){
         
@@ -25,7 +24,7 @@ window.addEventListener("load", (evento) => {
             }
             );
         }
-    }
+    /* } */
 
     
 }

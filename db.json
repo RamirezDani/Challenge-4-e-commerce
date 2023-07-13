@@ -157,12 +157,12 @@
       "id": "85c1e453-50a4-401a-bedd-d1dddb75f840"
     },
     {
-      "nombre": "Gorro Simpsons",
-      "precio": "25000",
+      "nombre": "Gorro Simpson",
+      "precio": "18.000",
       "categoria": "Gorras",
-      "descripcion": "Simson Bartolomeo                        ",
-      "rutaImg": "..\\assets\\Gorro-Simson.png",
-      "id": "9730ee10-636e-453a-b027-fec3bdca1cba"
+      "descripcion": "Naranja                        ",
+      "rutaImg": "assets\\Gorro-Simson.png",
+      "id": "929ca93a-5853-4743-b370-f678a629388d"
     }
   ]
 }

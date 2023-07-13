@@ -10,7 +10,7 @@ formulario.addEventListener("submit", (evento) => {
   const descripcionProducto = document.querySelector("[data-descripcionProducto]").value;
   const rutaImg = document.querySelector("[data-imagen]").value;
   const nombreImg = rutaImg.split("\\");
-  const imagenProducto ="..\\assets\\"  +  nombreImg[2];  
+  const imagenProducto ="assets\\"  +  nombreImg[2];  
   
 
   jsonServerManager
