@@ -26,8 +26,6 @@ productosEncontradosCategoriaList.forEach(({ nombre, precio, id, rutaImg }, inde
   bannerCategoriaEncontrados.appendChild(nuevaLinea2); 
 });
 
-
-
 localStorage.clear();
 
 

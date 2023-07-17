@@ -1,5 +1,5 @@
 //Lista vista de edicion
-import {jsonServerManager} from "../service/jsonServer-Manager.js";
+import { jsonServerManager } from "../service/jsonServer-Manager.js";
 
 const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
   const linea = document.createElement("div");
@@ -42,20 +42,52 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index) => {
   return linea;
 };
 
-const bannerProductos = document.querySelector("[tira-img1]");
-export var cont = 0;
+//console.log("cont:" + cont);
+function addNewCard(nombre, precio, id, rutaImg, index){
+
+  const bannerProductos = document.querySelector("[tira-img1]");
+  const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index);
+  bannerProductos.appendChild(nuevaLinea);
+
+}
+
+function listenerBtnEdit(index,id) {
+
+  //console.log("cont:" + cont);
+  let btn_position = "btn_edit_prod" + index;  
+  const btnEdit = document.getElementById(btn_position);
+
+  btnEdit.addEventListener("click", (evento) => {    
+    
+    localStorage.setItem("id_product", id);
+    //console.log(id_product);
+    window.location.href = "../screens/productos-editar.html";
+  }
+  );
+
+}
+
+function listenerBtnDelete(index,id) {
+
+  let btn_position = "btn_del_prod" + index;  
+  const btnEdit = document.getElementById(btn_position);
+
+  btnEdit.addEventListener("click", (evento) => {        
+    jsonServerManager.eliminarProducto(id);
+  }
+  );
+
+}
 
 jsonServerManager
-.listaProductos()
-  .then((data) => {    
-    data.forEach(({ nombre, precio, id, rutaImg }, index) => {
-      cont++;
-      const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index);
-      bannerProductos.appendChild(nuevaLinea);     
+  .listaProductos()
+  .then((data) => {
+    data.forEach(({ nombre, precio, id, rutaImg }, index) => {      
+      addNewCard(nombre, precio, id, rutaImg, index);
+      listenerBtnEdit(index,id);
+      listenerBtnDelete(index,id);
       
-    });   
-    
+    });
+
   })
-  .catch((error) => alert("Ocurrió un error:" + error));  
-  
-  
+  .catch((error) => alert("Ocurrió un error:" + error));

@@ -1,5 +1,5 @@
 //Lista version general/comprador
-import {jsonServerManager} from "../service/jsonServer-Manager.js";
+import { jsonServerManager } from "../service/jsonServer-Manager.js";
 
 const crearNuevaLinea = (nombre, precio, id, rutaImg, index, index2) => {
   const linea = document.createElement("div");
@@ -21,70 +21,46 @@ const crearNuevaLinea = (nombre, precio, id, rutaImg, index, index2) => {
   return linea;
 };
 
-const bannerProductos = document.querySelector("[tira-img1]");
-export var cont = 0;
-//factor es el numero de fotos que se venpor categori
-const factor = 6;
+const divMaderos = document.querySelector("[tira-img1]");
+const divGorras = document.querySelector("[tira-img2]");
+const divHardware = document.querySelector("[tira-img3]");
+const numeroElementos = 6;
 
-jsonServerManager
-.listaProductos()
-  .then((data) => {    
-
-    const productosPennys = data.filter(function(producto) {
-      return producto.categoria === "Maderos";
-    }).slice(0, 6); // Limita la cantidad de objetos filtrados a 5;
-    
-    productosPennys.forEach(({ nombre, precio, id, rutaImg }, index) => {
-      cont++;
-      const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,0));
-      bannerProductos.appendChild(nuevaLinea);      
-      //console.log(nuevaLinea);
-    });
-  })
-  .catch((error) => alert("Ocurrió un error:" + error));
-
-const bannerRopa = document.querySelector("[tira-img2]");
-export var cont2 = 0;
-
-var newPosition = (factor,indice,grupo)=>{
-  const result = ((factor*grupo)+indice);
+var newPosition = (factor, indice, grupo) => {
+  const result = ((factor * grupo) + indice);
   return result;
 };
 
-
-jsonServerManager
-.listaProductos()
-  .then((data) => {    
-
-    const productosRopa = data.filter(function(producto) {
-      return producto.categoria === "Gorras";
-    }).slice(0, 6); // Limita la cantidad de objetos filtrados a 6;
-    
-    productosRopa.forEach(({ nombre, precio, id, rutaImg }, index) => {
-      cont2++;
-      const nuevaLinea2 = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,1));
-      bannerRopa.appendChild(nuevaLinea2);      
-      //console.log(nuevaLinea);
-    });
+function listenerHiperlink(link_detail, id) {
+  
+  link_detail.addEventListener('click', () => {
+    localStorage.setItem("id_product", id);
+    window.location.href = "screens/productos-detalle.html";
   })
-  .catch((error) => alert("Ocurrió un error:" + error));
+}
 
-const bannerHardware = document.querySelector("[tira-img3]");
-export var cont3 = 0;
+function addNeweCard(cantidadElementos, numeroGrupo, categoriaElementos, grupoProd) {
 
-jsonServerManager
-.listaProductos()
-  .then((data) => {    
+  jsonServerManager
+    .listaProductos()
+    .then((data) => {
 
-    const productosHardware = data.filter(function(producto) {
-      return producto.categoria === "Hardware";
-    }).slice(0, 6); // Limita la cantidad de objetos filtrados a 6;
-    
-    productosHardware.forEach(({ nombre, precio, id, rutaImg }, index) => {
-      cont3++;
-      const nuevaLinea3 = crearNuevaLinea(nombre, precio, id, rutaImg, index,newPosition(factor,index,2));
-      bannerHardware.appendChild(nuevaLinea3);      
-      //console.log(nuevaLinea);
-    });
-  })
-  .catch((error) => alert("Ocurrió un error:" + error));
+      const productosFiltrados = data.filter(function (producto) {
+        return producto.categoria === categoriaElementos;
+      }).slice(0, cantidadElementos); // Limita la cantidad de objetos filtrados a 5;
+
+      productosFiltrados.forEach(({ nombre, precio, id, rutaImg }, index) => {
+        const nuevaLinea = crearNuevaLinea(nombre, precio, id, rutaImg, index, newPosition(cantidadElementos * (numeroGrupo + 1), index, numeroGrupo));
+        grupoProd.appendChild(nuevaLinea);
+        const link_detail = document.getElementById(`link_detail${newPosition(cantidadElementos * (numeroGrupo + 1), index, numeroGrupo)}`);
+        listenerHiperlink(link_detail,id);
+      });
+    })
+    .catch((error) => alert("Ocurrió un error:" + error));
+
+}
+
+
+addNeweCard(numeroElementos, 0, "Maderos", divMaderos);
+addNeweCard(numeroElementos, 1, "Gorras", divGorras);
+addNeweCard(numeroElementos, 2, "Hardware", divHardware);

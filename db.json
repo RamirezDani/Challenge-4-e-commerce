@@ -30,11 +30,11 @@
     },
     {
       "nombre": "Gorra Houston",
-      "precio": "30.000",
+      "precio": "40.000",
       "categoria": "Gorras",
       "descripcion": "Gorra Houston gris",
-      "id": "6f246d2c-05a1-4293-9cbf-5c4d9481b612",
-      "rutaImg": "assets\\Gorra-houston.png"
+      "rutaImg": "assets\\Gorra-houston.png",
+      "id": "6f246d2c-05a1-4293-9cbf-5c4d9481b612"
     },
     {
       "nombre": "Gorra Long",
@@ -53,12 +53,12 @@
       "id": "6f22115f-7c16-4bba-938c-17fe0c5e68f8"
     },
     {
-      "nombre": "Gorro Trasher",
+      "nombre": "Gorro Trasher verde",
       "precio": "30.000",
       "categoria": "Gorras",
       "descripcion": "Gorro Trasher oliva",
-      "id": "8ef87ceb-b65d-4987-9995-10600b8ed410",
-      "rutaImg": "assets\\Gorro-verde.png"
+      "rutaImg": "assets\\Gorro-verde.png",
+      "id": "8ef87ceb-b65d-4987-9995-10600b8ed410"
     },
     {
       "nombre": "Listen Mariachi",
@@ -157,12 +157,12 @@
       "id": "85c1e453-50a4-401a-bedd-d1dddb75f840"
     },
     {
-      "nombre": "Gorro Simpson",
-      "precio": "18.000",
+      "nombre": "Gorra Simpson",
+      "precio": "20.000",
       "categoria": "Gorras",
       "descripcion": "Naranja                        ",
       "rutaImg": "assets\\Gorro-Simson.png",
-      "id": "929ca93a-5853-4743-b370-f678a629388d"
+      "id": "e1825c8c-3c7f-4fa2-9dca-d9753b024cb0"
     }
   ]
 }
